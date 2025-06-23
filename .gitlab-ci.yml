@@ -1,6 +1,7 @@
 stages:
   - test
   - build
+  - deploy
 
 test:
   stage: test
@@ -21,3 +22,12 @@ build:
   script:
     - docker build -t my-backend ./api
     - docker build -t my-frontend ./view
+
+deploy:
+  stage: deploy
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker-compose up -d
+  when: manual
