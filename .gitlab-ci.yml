@@ -1,7 +1,6 @@
 stages:
   - test
   - build
-  - deploy
 
 test:
   stage: test
@@ -23,8 +22,3 @@ build:
     - docker build -t my-backend ./api
     - docker build -t my-frontend ./view
 
-deploy:
-  stage: deploy
-  script:
-    - echo "Déploiement ici (ex: docker-compose up -d, push image, etc.)"
-  when: manualglpat-dbABx5TXkKJHyLrJotfi
