@@ -1,0 +1,30 @@
+stages:
+  - test
+  - build
+  - deploy
+
+test:
+  stage: test
+  image: node:18
+  script:
+    - cd api
+    - npm install
+    - npm test
+    - cd ../view
+    - npm install
+    - npm test
+
+build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker build -t my-backend ./api
+    - docker build -t my-frontend ./view
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Déploiement ici (ex: docker-compose up -d, push image, etc.)"
+  when: manual
