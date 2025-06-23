@@ -28,7 +28,7 @@ export default function ProductCreate(props) {
           <form method="post" onSubmit={create}>
             <div className="row">
               <div className="mb-3 col-md-6 col-lg-4">
-                <label className="form-label" htmlFor="product_name">Name</label>
+                <label className="form-label" htmlFor="product_name">Nom</label>
                 <input id="product_name" name="name" className="form-control" onChange={onChange} value={product.name ?? '' } maxLength="50" />
               </div>
               <div className="mb-3 col-md-6 col-lg-4">
