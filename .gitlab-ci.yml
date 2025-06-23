@@ -21,5 +21,3 @@ build:
   script:
     - docker build -t my-backend ./api
     - docker build -t my-frontend ./view
-
-
