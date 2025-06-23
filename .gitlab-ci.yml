@@ -11,7 +11,7 @@ test:
     - npm install
     - npm test
     - cd ../view
-    - npm install
+    - npm install 
     - npm test
 
 build:
