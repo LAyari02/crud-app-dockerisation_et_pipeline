@@ -27,4 +27,4 @@ deploy:
   stage: deploy
   script:
     - echo "Déploiement ici (ex: docker-compose up -d, push image, etc.)"
-  when: manual
+  when: manualglpat-dbABx5TXkKJHyLrJotfi
