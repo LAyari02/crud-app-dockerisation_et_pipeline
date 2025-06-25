@@ -31,3 +31,4 @@ deploy:
   script:
     - docker-compose up -d
   when: manual
+  
