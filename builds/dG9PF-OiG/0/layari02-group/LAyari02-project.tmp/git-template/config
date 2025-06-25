@@ -1,0 +1,14 @@
+[init]
+	defaultBranch = none
+[fetch]
+	recurseSubmodules = false
+[credential]
+	interactive = never
+[gc]
+	autoDetach = false
+[http]
+	extraHeader = X-Gitaly-Correlation-ID: b61ef0fe217c4a5223744337fa65241c
+[transfer]
+	bundleURI = true
+[http "https://gitlab.com"]
+	sslCAInfo = /home/sayari/Example-CRUD-React-18-Express-4/builds/dG9PF-OiG/0/layari02-group/LAyari02-project.tmp/CI_SERVER_TLS_CA_FILE

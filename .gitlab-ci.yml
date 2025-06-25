@@ -19,9 +19,7 @@ build:
   image: docker:latest
   services:
     - docker:dind
-  variables:
-    DOCKER_HOST: tcp://docker:2375/
-    DOCKER_TLS_CERTDIR: ""
+
   script:
     - docker build -t my-backend ./api
     - docker build -t my-frontend ./view
@@ -33,9 +31,4 @@ deploy:
     - docker:dind
   script:
     - docker-compose up -d
-<<<<<<< HEAD
   when: manual
-=======
-  when: manual
-  
->>>>>>> 6d79e711d8bec64ffbd6591e9fa00bc3ac229d18
