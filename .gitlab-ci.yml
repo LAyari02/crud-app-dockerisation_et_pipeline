@@ -30,4 +30,4 @@ deploy:
     - docker:dind
   script:
     - docker-compose up -d
-  when: manual
+  when: manual4
