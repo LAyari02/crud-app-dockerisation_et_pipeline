@@ -33,4 +33,9 @@ deploy:
     - docker:dind
   script:
     - docker-compose up -d
+<<<<<<< HEAD
   when: manual
+=======
+  when: manual
+  
+>>>>>>> 6d79e711d8bec64ffbd6591e9fa00bc3ac229d18
