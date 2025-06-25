@@ -19,7 +19,6 @@ build:
   image: docker:latest
   services:
     - docker:dind
-
   script:
     - docker build -t my-backend ./api
     - docker build -t my-frontend ./view
