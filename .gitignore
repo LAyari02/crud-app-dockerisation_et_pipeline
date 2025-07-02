@@ -3,4 +3,5 @@ api/node_modules
 api/package-lock.json
 view/.vscode
 view/node_modules
-view/package-lock.json
+view/package-lock.jsonkubectl
+minikube-linux-amd64
